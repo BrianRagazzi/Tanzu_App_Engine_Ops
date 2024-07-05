@@ -16,7 +16,8 @@ tanzu operations clustergroup use  $cg
 echo $line > /tmp/clustergroup.txt
 echo "Cluster Group Capabilities" >>  /tmp/clustergroup.txt
 echo $line >> /tmp/clustergroup.txt
-kubectl get kubernetescluster $cl -o yaml | grep -A 1000 capabilities: | grep name: | awk '{ print $2 }' | sort >> /tmp/clustergroup.txt
+#kubectl get kubernetescluster $cl -o yaml | grep -A 1000 capabilities: | grep name: | awk '{ print $2 }' | sort >> /tmp/clustergroup.txt
+kubectl get packageinstalls >> /tmp/clustergroup.txt
 tanzu space use $sp
 echo $line > /tmp/space.txt
 echo "Space Capabilities" >>  /tmp/space.txt
