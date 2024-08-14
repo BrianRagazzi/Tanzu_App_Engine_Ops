@@ -1,7 +1,7 @@
 source tanzucli.src
 export KUBECONFIG="$HOME/.config/tanzu/kube/config"
 export proj="AMER-East"
-export sp="bragazzi-app1"
+export sp="bragazzi-helm1"
 export org="sa-tanzu-platform"
 export cl="bragazzi-cl1"
 export cg="bragazzi-cg1"
