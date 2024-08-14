@@ -16,8 +16,17 @@ SUMC=0.0
 
 # which metrics we want to get
 METRICS="requests"
+#METRICS="limits"
 #METRICS="requests limits"
 
+if [ $1 == "-requests" ] ; then
+  METRICS="requests"
+  echo "Calculating for requested resources........"
+fi
+if [ $1 == "-limits" ] ; then
+  METRICS="limits"
+  echo "Calculating for limit resources........"
+fi
 # loop through namespaces
 for NS in ${NAMESPACES}
 do
