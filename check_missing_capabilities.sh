@@ -21,7 +21,7 @@ TARGET_PROJECT="AMER-East"
 #TARGET_CLUSTERGROUP="mbentley-clustergroup"
 
 TARGET_SPACE="bragazzi-helm1" #"orf-rabbitmq-01"
-TARGET_CLUSTERGROUP="bragazzi-cg2" #"orfclustergroup2"
+TARGET_CLUSTERGROUP="bragazzi-cg1" #"orfclustergroup2"
 
 # set the diff tool to use
 DIFF_TOOL="sdiff"

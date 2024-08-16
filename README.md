@@ -6,7 +6,7 @@ https://github.com/timosalm/tp-gitops-install-emea
 https://www.vcluster.com/
 https://github.com/tanzu-end-to-end/e2e-tap-gitops
 
-
+https://github.com/Tanzu-Solutions-Engineering/tanzu-platform-workshop/blob/main/lab-platform-engineer/01-full-lab.md
 
 
 Make sure image exists in harbor.lab.brianragzzi.com/tanzu
@@ -53,7 +53,8 @@ kubectl get pods -A  -o custom-columns='NAMESPACE:.metadata.namespace, NAME:.met
 
 kubectl get po -A | grep -v Completed | wc -l
 
-
+## Helm App:
+https://docs.vmware.com/en/VMware-Tanzu-Platform/SaaS/create-manage-apps-tanzu-platform-k8s/how-to-helm-charts-in-spaces.html?hWord=N4IghgNiBcIBYFMIFsQF8g
 
 
 ## Requests
