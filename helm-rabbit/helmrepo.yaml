@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: rabbitmq
+spec:
+  interval: 5m
+  #url: https://registry-1.docker.io/bitnamicharts/rabbitmq
+  url:  'https://charts.bitnami.com/bitnami'

@@ -57,6 +57,10 @@ kubectl get po -A | grep -v Completed | wc -l
 https://docs.vmware.com/en/VMware-Tanzu-Platform/SaaS/create-manage-apps-tanzu-platform-k8s/how-to-helm-charts-in-spaces.html?hWord=N4IghgNiBcIBYFMIFsQF8g
 
 
+### Find and remove hlm app:
+KUBECONFIG="$HOME/.config/tanzu/kube/config" kapp list -A
+
+
 ## Requests
 1 CP node: 2CPU 8 GB RAM
 3 Worker nodes: 4 CPU, 8GB RAM

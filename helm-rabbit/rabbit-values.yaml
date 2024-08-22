@@ -1,0 +1,10 @@
+# podinfo-values.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rabbitmq-values
+type: Opaque
+stringData:
+  values.yaml: |
+    service:
+      type: LoadBalancer

@@ -1,0 +1,17 @@
+# containerapp.yaml
+apiVersion: apps.tanzu.vmware.com/v1
+kind: ContainerApp
+metadata:
+  name: rabbitmq
+  annotations:
+    containerapp.apps.tanzu.vmware.com/class: "kubernetes"
+spec:
+  description: RabbitMQ application from Helm
+  contact:
+    slack: "#my-helm-apps"
+  image: irrelevant
+  replicas: 3
+  relatedRefs:
+    - for: kubernetes.list-replicas
+      kind: Pod
+      labelSelector: app.kubernetes.io/name=rabbitmq
